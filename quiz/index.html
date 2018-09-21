@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="icon" type="image/x-icon" href="img/12.png">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./node_modules/bulma/css/bulma.css">
+</head>
+
+<body>
+    <section class="hero is-dark is-medium">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <p class="title">
+                    Login
+                </p>
+
+            </div>
+        </div>
+    </section>
+
+    <br>
+    <section>
+        <div class="container">
+            <div class="column is-half is-offset-one-quarter">
+                <div class="field">
+                    <label class="label">UserName</label>
+                    <div class="control">
+                        <input class="input" id="username" type="text">
+                    </div>
+                    <div class="help is-danger" id="hpname"></div>
+                </div>
+            </div>
+
+            <div class="column is-half is-offset-one-quarter">
+                <div class="field">
+                    <label class="label">Password</label>
+                    <div class="control">
+                        <input class="input" id="password" type="password">
+                    </div>
+                    <div class="help is-danger" id="hppw"></div>
+                </div>
+            </div>
+            <div class="column is-half is-offset-one-quarter">
+                <div class="field">
+                    <label class="label">AutoBot</label>
+                    <input class="input " type="" placeholder="Fill Number">
+                </div>
+                <div class="help is-danger"></div>
+            </div>
+            <div class="column is-half is-offset-one-quarter">
+                <a href="forgetpassword.html">
+                    forget password ?
+                </a>
+
+            </div>
+            <div class="column is-half is-offset-one-quarter">
+                <div class="control">
+                    <button class="button is-success is-fullwidth" onclick="checkEmail()" >Login</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        var one, two = false;
+        function checkEmail() {
+
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            if (name === "admin") {
+                document.getElementById("usrename").classList.remove("is-danger");
+                document.getElementById("hpname").innerHTML = "";
+                one = true;
+            } else {
+                document.getElementById("usrename").classList.add("is-danger");
+                document.getElementById("hpname").innerHTML = "UserName is Empty";
+            }
+
+            if (password === "1234") {
+                document.getElementById("password").classList.remove("is-danger");
+                document.getElementById("hppw").innerHTML = "";
+                two = true;
+            } else {
+                document.getElementById("password").classList.add("is-danger");
+                document.getElementById("hppw").innerHTML = "Password is Empty";
+            }
+            if (one == true && two == true) {
+                <a href="loginsuccess.html"></a>
+            }
+        }
+    </script>
+</body>
+
+</html>
